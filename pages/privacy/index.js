@@ -2,7 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Layout from '../../components/Layout';
-import { H1, Description } from '../styles'
+
+const H1 = styled.h1`
+  margin: 0;
+  line-height: 1.15;
+  font-size: 3rem;
+  text-align: center;
+`;
+
+const Description = styled.p`
+  line-height: 1.5;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  text-align: center;
+`
 
 const Section = styled.div`
   padding: 2rem 1rem;
