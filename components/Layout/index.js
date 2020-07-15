@@ -15,7 +15,7 @@ export default function Layout({ children, title = 'Phone Preaching - A Jehovah 
         <meta property="og:site_name" content="Phone Preaching"/>
         <meta property="og:title" content="A Jehovah Witness tool for automatic create and manage random phone numbers" />
         <meta property="og:description" content="You are Jehovah's Witness? So this tool will be very useful for you. Create and manage your random phone number lists easily." />
-        <meta property="og:image" content="https://phonepreaching-site.vercel.app/icons/android-chrome-192x192.png" />
+        <meta property="og:image" content="https://phonepreaching.vercel.app/icons/android-chrome-192x192.png" />
 
         <link rel="icon" href="/icons/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
