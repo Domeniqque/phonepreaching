@@ -1,19 +1,9 @@
 import styled from 'styled-components';
 
-
-import Layout from '../components/Layout'
-
 const H1 = styled.h1`
   margin: 0;
   line-height: 1.15;
   font-size: 3rem;
-  text-align: center;
-`;
-
-const H2 = styled.h2`
-  margin: 0;
-  line-height: 1.15;
-  font-size: 2rem;
   text-align: center;
 `;
 
@@ -31,7 +21,7 @@ const Section = styled.section`
 const ImageContent = styled.div`
   width: 100%;
   padding: 1rem 0;
-  margin: 10px 0;
+  margin: 20px 0;
   height: 420px;
   display: flex;
   justify-content: center;
@@ -48,23 +38,20 @@ const ImageContent = styled.div`
   }
 `;
 
-
 export default function Home() {
   return (
-    <Layout>
-      <>
-        <Section>
-          <H1>Phone Preaching</H1>
+    <Section>
+      <H1>Phone Preaching</H1>
 
-          <Description>
-            Gerencie sua lista aleatória de números telefonicos 
-          </Description>
+      <Description>
+        Manage your random phone numbers
+      </Description>
 
-          <ImageContent>
-              <img src="/img/phone-index-filter-en.png" alt="Tela inicial com lista de números cadastrados"/>
-          </ImageContent>
-        </Section>
-      </>
-    </Layout>
+      <ImageContent>
+          <img src="/img/phone-index-filter-en.png" alt="Home screen with list of registered numbers"/>
+      </ImageContent>
+
+      <p>Create random lists of phone numbers in over 150 countries</p>
+    </Section>
   )
 }

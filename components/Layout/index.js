@@ -3,13 +3,20 @@ import Link from 'next/link'
 
 import { Container, Content, Footer } from './styles'
 
-export default function Layout({ children, title = 'Phone Preaching' }) {
+export default function Layout({ children, title = 'Phone Preaching - A Jehovah Witness tool for automatic create and manage random phone numbers' }) {
   return (
     <Container>
       <Head>
         <title>{title}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="A Jehovah Witness tool for automatic create and manage random phone numbers"/>
+
+        <meta property="og:site_name" content="Phone Preaching"/>
+        <meta property="og:title" content="A Jehovah Witness tool for automatic create and manage random phone numbers" />
+        <meta property="og:description" content="You are Jehovah's Witness? So this tool will be very useful for you. Create and manage your random phone number lists easily." />
+        <meta property="og:image" content="https://phonepreaching-site.vercel.app/icons/android-chrome-192x192.png" />
+
         <link rel="icon" href="/icons/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
@@ -24,13 +31,13 @@ export default function Layout({ children, title = 'Phone Preaching' }) {
         <section>
           <Link href="/">
             <a href="/">
-              Início
+              Home
             </a>
           </Link>
 
           <Link href="privacy">
             <a href="/privacy">
-              Politicas de Privacidade
+              Privacy Policy
             </a>
           </Link>
         </section>

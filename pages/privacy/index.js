@@ -1,7 +1,4 @@
-import React from 'react';
 import styled from 'styled-components';
-
-import Layout from '../../components/Layout';
 
 const H1 = styled.h1`
   margin: 0;
@@ -28,27 +25,25 @@ const Section = styled.div`
 
 function Privacy() {
   return (
-    <Layout title="Privacy Policy">
-      <>
-        <H1>Privacy Policy</H1>
-        
-        <Description>Nós não armazenamos nehum dado que você criar no aplicativo.</Description>
+    <>
+      <H1>Privacy Policy</H1>
+      
+      <Description>We do not store any data that you create in the app.</Description>
 
-        <Section>
-          <p>Não precisamos e nem queremos armazenar seus dados. Aliás nem temos servidores para armazenar seus dados 😉. Eles são seus e nunca iremos pedir eles. O que acontece no seu telefone, continua no seu telefone!</p>
+      <Section>
+        <p>We don't need and don't want to store your data. In fact, we don't even have servers to store your data 😉. They are yours and we will never ask for them. What happens on your phone, remains on your phone!</p>
 
-          <p>
-            No entanto, apenas uma vez o aplicativo nos enviará algumas informações suas: quando acontecer algum <strong>erro no aplicativo</strong> 🐛(acredite, não queremos ver seus dados). Para nos ajudar a identificar e corrigir 
-            o erro precisamos de algumas informações basicas como: seu <strong>país</strong>, o <strong>modelo do seu telefone</strong>, o <strong>log de erros</strong> e algumas outras informações coletadas pelo <a rel="noreferrer" href="https://policies.google.com/privacy?hl=en-US" no>Google Analytcs</a>. 
-            Essas informações ficam armazenadas nos servidores da Google. Após identificar e tratar o erro nós excluímos as informações. Não se preocupe, nenhum desses dados é o suficiente para identificar você. Mas se ainda tem alguma dúvida entre em contato: <a href="mailto:dylluar-labs@outlook.com">dylluar-labs@outlook.com</a>.
-          </p>
+        <p>
+          However, only once will the app send us some information about you: when an <strong> error in the app </strong> acontecer happens (believe me, we don't want to see your data). To help us identify and correct
+          the error we need some basic information like: your <strong> country </strong>, your phone's <strong> model </strong>, the <strong> error log </strong> and some other information collected by <a rel="noreferrer" href="https://policies.google.com/privacy?hl=en-US"> Google Analytcs</a>.
+          This information is stored on Google's servers. After identifying and addressing the error, we delete the information. Don't worry, none of this data is enough to identify you. But if you still have any questions please contact: <a href="mailto:dylluar-labs@outlook.com"> dylluar-labs@outlook.com</a>.
+        </p>
 
-          <p>Então, se você adquiriu nosso aplicativo parabéns 🥳. Este aplicativo é só seu e não deve compartilhar com outros ou fazer engenharia reversa ou qualquer outra coisa.</p>
+        <p>So, if you purchased our app, congratulations 🥳. This application is only yours and you should not share it with others or reverse engineer it or anything else.</p>
 
-          <p>Ao instalar o aplicativo você concorda com este termo. Prometemos que você sempre terá controle das suas informações.</p>
-        </Section>
-      </>
-    </Layout>
+        <p>By installing the application you <strong>agree to this term</strong>. We promise that you will always be in control of your information.</p>
+      </Section>
+    </>
   );
 }
 
