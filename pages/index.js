@@ -32,7 +32,7 @@ export default function Home() {
         </div>
       </div>
 
-      <h3>Available for iPhone, iPad and Android</h3>
+      <h3 style={{ textAlign: 'center'}}>Available for iPhone, iPad and Android</h3>
 
       <div className={styles.badges}>
         <a href="https://apps.apple.com/us/app/id1524566605#?platform=iphone">
