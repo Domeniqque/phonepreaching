@@ -10,7 +10,7 @@ export default function Layout({ children, title = 'Phone Preaching - A Jehovah 
         <title>{title}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="A Jehovah Witness tool for automatic create and manage random phone numbers"/>
+        <meta name="description" content="A Jehovah Witness tool for automatic create and manage random phone numbers. "/>
 
         <meta property="og:site_name" content="Phone Preaching"/>
         <meta property="og:title" content="A Jehovah Witness tool for automatic create and manage random phone numbers" />
@@ -21,6 +21,9 @@ export default function Layout({ children, title = 'Phone Preaching - A Jehovah 
         <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
+
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
       </Head>
 
       <main className={styles.content}>
@@ -112,17 +115,22 @@ export default function Layout({ children, title = 'Phone Preaching - A Jehovah 
           text-align: center;
         }
 
+        h2 {
+          margin: 0;
+          line-height: 1.15;
+          font-size: 1.8rem;
+        }
+
         .description{
           line-height: 1.5;
           font-size: 1.5rem;
-          padding: 1rem 0;
+          margin-top: 0.5rem;
           text-align: center;
         }
 
         section {
           flex: 1;
           max-width: 820px;
-          padding: 0 16px;
         }
       `}</style>
     </div>
