@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
-import { Container, Content, Footer } from './styles'
+import styles from './styles.module.scss';
 
 export default function Layout({ children, title = 'Phone Preaching - A Jehovah Witness tool for automatic create and manage random phone numbers' }) {
   return (
-    <Container>
+    <div className={styles.container}>
       <Head>
         <title>{title}</title>
         <meta charSet="utf-8" />
@@ -23,11 +23,11 @@ export default function Layout({ children, title = 'Phone Preaching - A Jehovah 
         <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
       </Head>
 
-      <Content>
+      <main className={styles.content}>
         {children}
-      </Content>
+      </main>
 
-      <Footer>
+      <footer className={styles.footer}>
         <section>
           <Link href="/">
             <a href="/">
@@ -43,7 +43,7 @@ export default function Layout({ children, title = 'Phone Preaching - A Jehovah 
         </section>
 
         <p>By <strong>Dylluar Labs</strong></p>
-      </Footer>
+      </footer>
 
       <style jsx global>{`
         html,
@@ -79,7 +79,7 @@ export default function Layout({ children, title = 'Phone Preaching - A Jehovah 
         *:focus {
           outline: 0;
         }
-
+        
         a {
           text-decoration: none;
           color: #0070f3;
@@ -102,8 +102,29 @@ export default function Layout({ children, title = 'Phone Preaching - A Jehovah 
         p {
           font-size: 1.1rem;
           line-height: 1.5rem;
+          margin-bottom: 1.2rem;
+        }
+
+        h1 {
+          margin: 0;
+          line-height: 1.15;
+          font-size: 3rem;
+          text-align: center;
+        }
+
+        .description{
+          line-height: 1.5;
+          font-size: 1.5rem;
+          padding: 1rem 0;
+          text-align: center;
+        }
+
+        section {
+          flex: 1;
+          max-width: 820px;
+          padding: 0 16px;
         }
       `}</style>
-    </Container>
+    </div>
   )
 }

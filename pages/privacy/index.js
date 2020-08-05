@@ -1,36 +1,12 @@
-import styled from 'styled-components';
-
-const H1 = styled.h1`
-  margin: 0;
-  line-height: 1.15;
-  font-size: 3rem;
-  text-align: center;
-`;
-
-const Description = styled.p`
-  line-height: 1.5;
-  font-size: 1.5rem;
-  padding: 1rem 0;
-  text-align: center;
-`
-
-const Section = styled.div`
-  padding: 2rem 1rem;
-  max-width: 820px;
-
-  p {
-    margin: 1.2rem 0;
-  }
-`;
 
 function Privacy() {
   return (
     <>
-      <H1>Privacy Policy</H1>
+      <h1>Privacy Policy</h1>
       
-      <Description>We do not store any data that you create in the app.</Description>
+      <p className="description">We do not store any data that you create in the app.</p>
 
-      <Section>
+      <section>
         <p>We don't need and don't want to store your data. In fact, we don't even have servers to store your data 😉. They are yours and we will never ask for them. What happens on your phone, remains on your phone!</p>
 
         <p>
@@ -42,7 +18,7 @@ function Privacy() {
         <p>So, if you purchased our app, congratulations 🥳. This application is only yours and you should not share it with others or reverse engineer it or anything else.</p>
 
         <p>By installing the application you <strong>agree to this term</strong>. We promise that you will always be in control of your information.</p>
-      </Section>
+      </section>
     </>
   );
 }
