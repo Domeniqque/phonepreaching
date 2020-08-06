@@ -19,8 +19,11 @@
   row-gap: 1rem;
   padding: 0 20px;
   margin: 40px 0;
+  max-width: 950px;
 
   div {
+    padding: 0 10px;
+    
     p {
       margin: 0.8rem 0;
     }
