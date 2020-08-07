@@ -35,7 +35,7 @@ export default function Home() {
       <h3 style={{ textAlign: 'center'}}>Available for iPhone, iPad and Android</h3>
 
       <div className={styles.badges}>
-        <a href="https://apps.apple.com/us/app/id1524566605#?platform=iphone">
+        <a href="https://apps.apple.com/app/id1524566605#?platform=iphone">
           <img src="/img/app-store-badge.svg" alt="Available for download on the App Store" />
         </a>
 
